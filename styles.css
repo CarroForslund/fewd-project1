@@ -11,21 +11,25 @@ body {
   color: #222;
   background: #f7f5f0;
 }
+
+h1, h2, h3 {
+  font-family: 'Arima Madurai', cursive;
+}
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #ce1d6b;
 }
 a:hover {
-  color: #6633ff;
+  color: #00BADB;
 }
 
 /* Section Styles */
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: #ce1d6b; /*Dark pink*/
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -49,33 +53,43 @@ a:hover {
   padding: 5px 10px 10px 10px;
 }
 .nav a {
+  color: #edc1d0;
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: white;
+}
+
+.hobby {
+  border-radius: 50%;
+  width: 100%;
 }
 
 header {
   text-align: center;
-  background: url('images/spinola-bay.jpg') no-repeat center ;
+  background: url('images/champagne.jpg') no-repeat center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
+
 header {
   line-height: 1.5;
 }
+
 header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 5px double white;
   transition: all .5s;
 }
+
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(5deg) translateY(-20px);
 }
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -85,8 +99,8 @@ header .profile-image:hover {
   margin: 10px auto;
 }
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: #00BADB;
+  color: white;
 }
 .card {
   margin: 30px;
@@ -99,25 +113,25 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #ce1d6b; /*Dark pink*/
 }
 
-ul.skills {
+ul.tags {
   padding: 0;
   text-align: center;
 }
 
-.skills li {
+.tags li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #00BADB;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
-.skills li:nth-child(odd) {
-  background: #0399ff;
+.tags li:nth-child(odd) {
+  background: #28d4bb;
 }
 
 footer {
